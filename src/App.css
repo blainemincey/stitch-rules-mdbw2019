@@ -18,12 +18,11 @@
 .text {
   padding-left: 10px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 20px;
 }
 
-.text2 {
-  padding-left: 10px;
-  font-weight: bold;
-  font-size: 20px;
+.divpadding {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 

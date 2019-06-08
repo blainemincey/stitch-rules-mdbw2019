@@ -95,14 +95,13 @@ export default class App extends Component {
                 <div>
                     <header>
                         <img src={img} alt="logo" height={50}/>
-                        <text className="text">Movie Selection</text>
                     </header>
                 </div>
-                <div>
+                <div className="divpadding">
                     <button className="button" onClick={() => this.onClick('Child')}>Child</button>
                     <button className="button" onClick={() => this.onClick('Teen')}>Teen</button>
                     <button className="button" onClick={() => this.onClick('Adult')}>Adult</button>
-                    <text className="text2">Displaying movies for user: {this.state.username}</text>
+                    <text className="text">Displaying movies for user: {this.state.username}</text>
                 </div>
                 <div>
                 <ReactTable
@@ -110,21 +109,24 @@ export default class App extends Component {
                     columns={[
                         {
                             Header: "Title",
-                            accessor: "title"
+                            accessor: "title",
+                            Cell: row => <div style={{ textAlign: "center" }}>{row.value}</div>
                         },
                         {
                             Header: "Rated",
-                            accessor: "rated"
+                            accessor: "rated",
+                            Cell: row => <div style={{ textAlign: "center" }}>{row.value}</div>
                         },
                         {
                             Header: "IMDB Rating",
-                            accessor: "imdb.rating"
+                            accessor: "imdb.rating",
+                            Cell: row => <div style={{ textAlign: "center" }}>{row.value}</div>
                         },
                         {
                             Header: "Poster",
                             accessor: "poster",
                             Cell: row => {
-                                return <div><img alt="" height={100} src={row.value}/></div>
+                                return <div style={{ textAlign: "center" }}><img alt="" height={100} src={row.value}/></div>
                             }
                         }
                     ]}
