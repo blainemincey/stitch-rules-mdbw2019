@@ -6,7 +6,7 @@ import "react-table/react-table.css"
 import './App.css';
 
 // Initialize Stitch.  Be sure to add your unique App Id!
-let appId = 'stitch-rules-application-ttmgw';
+let appId = '## Your Unique Stitch App Id ##';
 Stitch.initializeDefaultAppClient(appId);
 const stitchClient = Stitch.defaultAppClient;
 

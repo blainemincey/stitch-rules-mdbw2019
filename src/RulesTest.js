@@ -6,7 +6,7 @@ const {
 } = require('mongodb-stitch-server-sdk');
 
 // Change these variables
-let myAppId = 'stitch-rules-application-ttmgw';
+let myAppId = '## Your Unique Stitch App Id ##';
 
 // If following the tutorial, use Child, Teen, or Adult
 let username = 'Child';
